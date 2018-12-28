@@ -7,7 +7,7 @@ class zemessettingsclass {
 
     function getZeminitSettings() {
         include_once(ABSPATH.'wp-admin/includes/plugin.php');
-        if (is_plugin_active('zem-email-system/zem-email-system.php')) {
+        if (is_plugin_active('alehsan_wp/zem-email-system.php')) {
             if( ! get_option('zemes_industry_name'))
                 update_option('zemes_industry_name', get_bloginfo ('name'));
             if( ! get_option('zemes_industry_mobile'))
